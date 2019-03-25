@@ -1,0 +1,71 @@
+//kedai kopi
+
+public class kopi{
+	public static void main(String[]args){
+		kedai kopi = new kedai();
+		kopi.menu_manual = " v60 ";
+		kopi.menu_espresso = " Latte ";
+		kopi.menu_nonkopi = " Green Tea ";
+		kopi.menu_makanan = " Kentang ";
+		kopi.jumlah_karyawan = 5;
+		kopi.jumlah_pembeli = 30;
+		kopi.jumlah_supplier = 3;
+		kopi.jenis_kopi = " Arabika ";  
+		kopi.jumlah_meja = 15;
+		kopi.jumlah_kursi = 60;
+		kopi.manual();
+		kopi.espresso();
+		kopi.nonkopi();
+		kopi.makanan();
+		kopi.karyawan();
+		kopi.pembeli();
+		kopi.supplier();
+		kopi.jenis();
+		kopi.meja();
+				
+	}
+}
+	class kedai{
+		String menu_manual,menu_espresso,menu_nonkopi,menu_makanan,jenis_kopi;
+		int jumlah_karyawan,jumlah_kursi,jumlah_meja,jumlah_pembeli,jumlah_supplier;
+		
+		void manual(){
+			System.out.println("Menu Manual : "+ menu_manual);
+		}
+		
+		void espresso(){
+			System.out.println("Menu Espresso : "+ menu_espresso);
+		}
+		
+		void nonkopi(){
+			System.out.println("Menu Non Kopi  : "+menu_nonkopi);
+		}
+		
+		void makanan(){
+			System.out.println("Meu Makanan : "+ menu_makanan);
+		}
+		
+		void karyawan(){
+			System.out.println("Jumlah Karyawan : "+ jumlah_karyawan);
+		}
+		
+		void supplier(){
+			System.out.println("Jumlah Supplier : "+ jumlah_supplier);
+		}
+		
+		void pembeli(){
+			System.out.println("Jumlas Pembeli : "+ jumlah_pembeli);
+		}
+		
+		void jenis(){
+			System.out.println("Jenis Kopi : "+ jenis_kopi);
+		}
+		
+		void meja(){
+			System.out.println("Jumlah Meja : "+ jumlah_meja);
+		}
+		
+		void kursi(){
+			System.out.println("Jumlah Kursi : "+ jumlah_kursi);
+		}
+	}
